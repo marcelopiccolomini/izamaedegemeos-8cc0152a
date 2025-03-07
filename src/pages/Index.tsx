@@ -8,7 +8,7 @@ const Index = () => {
       <div className="w-full max-w-6xl mx-auto pt-16 px-4">
         <div className="flex flex-col items-center justify-center">
           <div className="rounded-full bg-white p-4 mb-2">
-            <img src="/public/lovable-uploads/e6487d3d-6b28-43fa-b5ab-c433d5795c53.png" alt="Book icon" className="w-10 h-10" />
+            <img src="/public/lovable-uploads/d2e9bddf-75de-4737-9d1f-061b63589b7d.png" alt="Book icon" className="w-10 h-10" />
           </div>
           <div className="text-center">
             <h2 className="text-lg font-bold uppercase text-[#5C3D2E]">BRINCADEIRAS</h2>
@@ -35,27 +35,27 @@ const Index = () => {
           <ActivityCard 
             title="Brincadeiras" 
             subtitle="exploração sensorial" 
-            image="/public/lovable-uploads/f9c01421-3b6b-4ae8-ba47-d9d40ee0daa1.png" 
+            image="/public/lovable-uploads/4975a274-3732-4a51-aaf8-83d87904d7a5.png" 
           />
           <ActivityCard 
             title="Criando" 
             subtitle="Garrafa sensorial" 
-            image="/public/lovable-uploads/5da323ef-ea1a-4ea5-80bf-06cccc6f270d.png" 
+            image="/public/lovable-uploads/dfda74d2-abe0-4172-9e34-ebe0df3e48b0.png" 
           />
           <ActivityCard 
             title="Montando" 
             subtitle="Encaixe e tira" 
-            image="/public/lovable-uploads/8f7f237d-350d-458b-98c2-4454b9a22e0b.png" 
+            image="/public/lovable-uploads/c0fde4a8-6f28-4d70-8fb4-bdd32616d3e4.png" 
           />
           <ActivityCard 
             title="Pescaria" 
             subtitle="De objetos" 
-            image="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1" 
+            image="/public/lovable-uploads/74f30199-8b6a-4da4-bc94-b45246b30c72.png" 
           />
           <ActivityCard 
             title="Transferência" 
             subtitle="Com colheres" 
-            image="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9" 
+            image="/public/lovable-uploads/4a86d49d-83a0-4f7d-8bca-74578e4585e6.png" 
           />
         </div>
 
@@ -69,22 +69,22 @@ const Index = () => {
             <ActivityCard 
               title="Brincando" 
               subtitle="Macarrão no palito" 
-              image="https://images.unsplash.com/photo-1472396961693-142e6e269027" 
+              image="/public/lovable-uploads/026f9c4d-c3f8-4fa9-8f47-cd107766c5e9.png" 
             />
             <ActivityCard 
               title="Pintura" 
               subtitle="Comestível" 
-              image="https://images.unsplash.com/photo-1493962853295-0fd70327578a" 
+              image="/public/lovable-uploads/5da9bd62-84f6-4e0c-bee9-f32ff7c43c64.png" 
             />
             <ActivityCard 
               title="Transferência" 
               subtitle="Com colheres" 
-              image="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9" 
+              image="/public/lovable-uploads/fb16708b-c6d0-4d43-9c71-b5c4b8b21d36.png" 
             />
             <ActivityCard 
               title="Cabaninha" 
               subtitle="Passa-passa" 
-              image="https://images.unsplash.com/photo-1721322800607-8c38375eef04" 
+              image="/public/lovable-uploads/010b62d4-4948-4cb2-9067-2a685ba21569.png" 
             />
           </div>
 
@@ -107,7 +107,7 @@ const Index = () => {
           {/* Product showcase */}
           <div className="flex justify-center mb-12">
             <img 
-              src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d" 
+              src="/public/lovable-uploads/dee5da29-e190-4189-85f8-b7859a201f27.png" 
               alt="Product mockups" 
               className="max-w-full md:max-w-lg" 
             />
@@ -128,6 +128,11 @@ const Index = () => {
       <footer className="bg-[#C28E60] text-white py-12 px-4">
         <div className="w-full max-w-6xl mx-auto">
           <div className="flex flex-col items-center justify-center mb-8">
+            <img 
+              src="/public/lovable-uploads/b0dacc9c-b59b-44fd-96df-f5f638048dd4.png" 
+              alt="Logo" 
+              className="h-16 mb-4" 
+            />
             <div className="text-2xl font-bold tracking-widest">
               IZAMAMAEDEGEMEOS
             </div>
