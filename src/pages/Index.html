@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Completo da Maternidade</title>
+    <meta name="description" content="Brincadeiras Infantis - Guia completo para mães" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #FDE1D3;
+      }
+      
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 1rem;
+      }
+      
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .logo-container {
+        background-color: white;
+        border-radius: 50%;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .logo-img {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+      
+      .logo-text {
+        text-align: center;
+      }
+      
+      .logo-title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #5C3D2E;
+        margin: 0;
+      }
+      
+      .logo-subtitle {
+        font-size: 0.875rem;
+        color: #5C3D2E;
+        margin: 0;
+      }
+      
+      .main-title {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+      }
+      
+      .title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #3A2618;
+      }
+      
+      @media (min-width: 768px) {
+        .title {
+          font-size: 2.25rem;
+        }
+      }
+      
+      .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+      }
+      
+      .btn-primary {
+        background-color: #8B4513;
+        color: white;
+        font-weight: 500;
+        padding: 1.5rem 2rem;
+        border-radius: 9999px;
+        font-size: 1.125rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .btn-primary:hover {
+        background-color: #6b3003;
+      }
+      
+      .btn-secondary {
+        background-color: #D16B6B;
+        color: white;
+        font-weight: 500;
+        padding: 1.5rem 2rem;
+        border-radius: 9999px;
+        font-size: 1.125rem;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .btn-secondary:hover {
+        background-color: #b85555;
+      }
+      
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 5rem;
+      }
+      
+      @media (min-width: 640px) {
+        .grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      
+      @media (min-width: 1024px) {
+        .grid.grid-5 {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+      
+      @media (min-width: 768px) {
+        .grid {
+          gap: 1.5rem;
+        }
+        
+        .grid.grid-4 {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      
+      .card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        aspect-ratio: 1 / 1;
+      }
+      
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .card-overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+      
+      .card-title {
+        font-size: 0.875rem;
+        font-weight: 300;
+        margin: 0;
+      }
+      
+      .card-subtitle {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin: 0;
+      }
+      
+      .section-title {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+      
+      .section-title h2 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: #3A2618;
+      }
+      
+      .bonus-section {
+        padding: 2.5rem 0;
+      }
+      
+      .price-section {
+        background-color: #B5D5B0;
+        border-radius: 0.5rem;
+        padding: 4rem 1rem;
+        margin-bottom: 4rem;
+      }
+      
+      .product-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+      }
+      
+      .product-img img {
+        max-width: 100%;
+      }
+      
+      @media (min-width: 768px) {
+        .product-img img {
+          max-width: 32rem;
+        }
+      }
+      
+      footer {
+        background-color: #C28E60;
+        color: white;
+        padding: 3rem 1rem;
+      }
+      
+      .footer-content {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .footer-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+      
+      .footer-logo img {
+        height: 4rem;
+        margin-bottom: 1rem;
+      }
+      
+      .footer-brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+      
+      .footer-copyright {
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section with logo -->
+    <div class="container">
+      <div class="header">
+        <div class="logo-container">
+          <img src="/lovable-uploads/d2e9bddf-75de-4737-9d1f-061b63589b7d.png" alt="Book icon" class="logo-img" />
+        </div>
+        <div class="logo-text">
+          <h2 class="logo-title">BRINCADEIRAS</h2>
+          <p class="logo-subtitle">INFANTIS</p>
+        </div>
+      </div>
+
+      <!-- Main title -->
+      <div class="main-title">
+        <h1 class="title">Guia Completo da Maternidade</h1>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="btn-container">
+        <button class="btn-primary">
+          Quero Acessar o eBook
+        </button>
+      </div>
+
+      <!-- Activity cards section -->
+      <div class="grid grid-5">
+        <div class="card">
+          <img src="/lovable-uploads/4975a274-3732-4a51-aaf8-83d87904d7a5.png" alt="Brincadeiras" />
+          <div class="card-overlay">
+            <p class="card-title">Brincadeiras</p>
+            <p class="card-subtitle">exploração sensorial</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="/lovable-uploads/dfda74d2-abe0-4172-9e34-ebe0df3e48b0.png" alt="Criando" />
+          <div class="card-overlay">
+            <p class="card-title">Criando</p>
+            <p class="card-subtitle">Garrafa sensorial</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="/lovable-uploads/c0fde4a8-6f28-4d70-8fb4-bdd32616d3e4.png" alt="Montando" />
+          <div class="card-overlay">
+            <p class="card-title">Montando</p>
+            <p class="card-subtitle">Encaixe e tira</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="/lovable-uploads/74f30199-8b6a-4da4-bc94-b45246b30c72.png" alt="Pescaria" />
+          <div class="card-overlay">
+            <p class="card-title">Pescaria</p>
+            <p class="card-subtitle">De objetos</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="/lovable-uploads/4a86d49d-83a0-4f7d-8bca-74578e4585e6.png" alt="Transferência" />
+          <div class="card-overlay">
+            <p class="card-title">Transferência</p>
+            <p class="card-subtitle">Com colheres</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bonus section -->
+      <div class="bonus-section">
+        <div class="section-title">
+          <h2>BÔNUS:</h2>
+        </div>
+
+        <div class="grid grid-4">
+          <div class="card">
+            <img src="/lovable-uploads/026f9c4d-c3f8-4fa9-8f47-cd107766c5e9.png" alt="Brincando" />
+            <div class="card-overlay">
+              <p class="card-title">Brincando</p>
+              <p class="card-subtitle">Macarrão no palito</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="/lovable-uploads/5da9bd62-84f6-4e0c-bee9-f32ff7c43c64.png" alt="Pintura" />
+            <div class="card-overlay">
+              <p class="card-title">Pintura</p>
+              <p class="card-subtitle">Comestível</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="/lovable-uploads/fb16708b-c6d0-4d43-9c71-b5c4b8b21d36.png" alt="Transferência" />
+            <div class="card-overlay">
+              <p class="card-title">Transferência</p>
+              <p class="card-subtitle">Com colheres</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="/lovable-uploads/010b62d4-4948-4cb2-9067-2a685ba21569.png" alt="Cabaninha" />
+            <div class="card-overlay">
+              <p class="card-title">Cabaninha</p>
+              <p class="card-subtitle">Passa-passa</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second CTA Button -->
+        <div class="btn-container">
+          <button class="btn-primary">
+            Quero todas essas receitas
+          </button>
+        </div>
+      </div>
+
+      <!-- Price section -->
+      <div class="price-section">
+        <div class="section-title">
+          <h2>Afinal, quanto custa?</h2>
+        </div>
+
+        <!-- Product showcase -->
+        <div class="product-img">
+          <img 
+            src="/lovable-uploads/dee5da29-e190-4189-85f8-b7859a201f27.png" 
+            alt="Product mockups"
+          />
+        </div>
+
+        <!-- Final CTA Button -->
+        <div class="btn-container">
+          <button class="btn-secondary">
+            Quero adquirir agora
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img 
+            src="/lovable-uploads/b0dacc9c-b59b-44fd-96df-f5f638048dd4.png" 
+            alt="Logo"
+          />
+          <div class="footer-brand">
+            IZAMAMAEDEGEMEOS
+          </div>
+        </div>
+        <div class="footer-copyright">
+          TODOS OS DIREITOS RESERVADOS
+        </div>
+      </div>
+    </footer>
+    
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </body>
+</html>
