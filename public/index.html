@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Completo da Maternidade</title>
+    <meta name="description" content="Brincadeiras Infantis - Guia completo para mães" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #FDE1D3;
+        font-family: 'Arial', sans-serif;
+      }
+      .btn-primary {
+        background-color: #8B4513;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 9999px;
+        font-weight: 500;
+        font-size: 1.125rem;
+        transition: background-color 0.3s;
+      }
+      .btn-primary:hover {
+        background-color: #6b3003;
+      }
+      .btn-secondary {
+        background-color: #D16B6B;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 9999px;
+        font-weight: 500;
+        font-size: 1.125rem;
+        transition: background-color 0.3s;
+      }
+      .btn-secondary:hover {
+        background-color: #b85555;
+      }
+      .activity-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        aspect-ratio: 1/1;
+      }
+      .activity-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .activity-card-overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+      .activity-card-title {
+        font-size: 0.875rem;
+        font-weight: 300;
+      }
+      .activity-card-subtitle {
+        font-size: 1.125rem;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    
+    <div class="min-h-screen w-full">
+      <!-- Header section with logo -->
+      <div class="w-full max-w-6xl mx-auto pt-16 px-4">
+        <div class="flex flex-col items-center justify-center">
+          <div class="rounded-full bg-white p-4 mb-2">
+            <img src="/lovable-uploads/d2e9bddf-75de-4737-9d1f-061b63589b7d.png" alt="Book icon" class="w-10 h-10" />
+          </div>
+          <div class="text-center">
+            <h2 class="text-lg font-bold uppercase text-[#5C3D2E]">BRINCADEIRAS</h2>
+            <p class="text-sm text-[#5C3D2E]">INFANTIS</p>
+          </div>
+        </div>
+
+        <!-- Main title -->
+        <div class="text-center mt-12 mb-8">
+          <h1 class="text-3xl md:text-4xl font-bold text-[#3A2618]">Guia Completo da Maternidade</h1>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex justify-center mb-16">
+          <button class="btn-primary">
+            Quero Acessar o eBook
+          </button>
+        </div>
+
+        <!-- Activity cards section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-20">
+          <!-- Activity Card 1 -->
+          <div class="activity-card">
+            <img src="/lovable-uploads/4975a274-3732-4a51-aaf8-83d87904d7a5.png" alt="Brincadeiras" />
+            <div class="activity-card-overlay">
+              <p class="activity-card-title">Brincadeiras</p>
+              <p class="activity-card-subtitle">exploração sensorial</p>
+            </div>
+          </div>
+          
+          <!-- Activity Card 2 -->
+          <div class="activity-card">
+            <img src="/lovable-uploads/dfda74d2-abe0-4172-9e34-ebe0df3e48b0.png" alt="Criando" />
+            <div class="activity-card-overlay">
+              <p class="activity-card-title">Criando</p>
+              <p class="activity-card-subtitle">Garrafa sensorial</p>
+            </div>
+          </div>
+          
+          <!-- Activity Card 3 -->
+          <div class="activity-card">
+            <img src="/lovable-uploads/c0fde4a8-6f28-4d70-8fb4-bdd32616d3e4.png" alt="Montando" />
+            <div class="activity-card-overlay">
+              <p class="activity-card-title">Montando</p>
+              <p class="activity-card-subtitle">Encaixe e tira</p>
+            </div>
+          </div>
+          
+          <!-- Activity Card 4 -->
+          <div class="activity-card">
+            <img src="/lovable-uploads/74f30199-8b6a-4da4-bc94-b45246b30c72.png" alt="Pescaria" />
+            <div class="activity-card-overlay">
+              <p class="activity-card-title">Pescaria</p>
+              <p class="activity-card-subtitle">De objetos</p>
+            </div>
+          </div>
+          
+          <!-- Activity Card 5 -->
+          <div class="activity-card">
+            <img src="/lovable-uploads/4a86d49d-83a0-4f7d-8bca-74578e4585e6.png" alt="Transferência" />
+            <div class="activity-card-overlay">
+              <p class="activity-card-title">Transferência</p>
+              <p class="activity-card-subtitle">Com colheres</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bonus section -->
+        <div class="py-10">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-[#3A2618]">BÔNUS:</h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-10">
+            <!-- Bonus Card 1 -->
+            <div class="activity-card">
+              <img src="/lovable-uploads/026f9c4d-c3f8-4fa9-8f47-cd107766c5e9.png" alt="Brincando" />
+              <div class="activity-card-overlay">
+                <p class="activity-card-title">Brincando</p>
+                <p class="activity-card-subtitle">Macarrão no palito</p>
+              </div>
+            </div>
+            
+            <!-- Bonus Card 2 -->
+            <div class="activity-card">
+              <img src="/lovable-uploads/5da9bd62-84f6-4e0c-bee9-f32ff7c43c64.png" alt="Pintura" />
+              <div class="activity-card-overlay">
+                <p class="activity-card-title">Pintura</p>
+                <p class="activity-card-subtitle">Comestível</p>
+              </div>
+            </div>
+            
+            <!-- Bonus Card 3 -->
+            <div class="activity-card">
+              <img src="/lovable-uploads/fb16708b-c6d0-4d43-9c71-b5c4b8b21d36.png" alt="Transferência" />
+              <div class="activity-card-overlay">
+                <p class="activity-card-title">Transferência</p>
+                <p class="activity-card-subtitle">Com colheres</p>
+              </div>
+            </div>
+            
+            <!-- Bonus Card 4 -->
+            <div class="activity-card">
+              <img src="/lovable-uploads/010b62d4-4948-4cb2-9067-2a685ba21569.png" alt="Cabaninha" />
+              <div class="activity-card-overlay">
+                <p class="activity-card-title">Cabaninha</p>
+                <p class="activity-card-subtitle">Passa-passa</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second CTA Button -->
+          <div class="flex justify-center mb-16">
+            <button class="btn-primary">
+              Quero todas essas receitas
+            </button>
+          </div>
+        </div>
+
+        <!-- Price section -->
+        <div class="bg-[#B5D5B0] rounded-lg py-16 px-4 mb-16">
+          <div class="text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#3A2618]">Afinal, quanto custa?</h2>
+          </div>
+
+          <!-- Product showcase -->
+          <div class="flex justify-center mb-12">
+            <img 
+              src="/lovable-uploads/dee5da29-e190-4189-85f8-b7859a201f27.png" 
+              alt="Product mockups" 
+              class="max-w-full md:max-w-lg" 
+            />
+          </div>
+
+          <!-- Final CTA Button -->
+          <div class="flex justify-center">
+            <button class="btn-secondary">
+              Quero adquirir agora
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-[#C28E60] text-white py-12 px-4">
+        <div class="w-full max-w-6xl mx-auto">
+          <div class="flex flex-col items-center justify-center mb-8">
+            <img 
+              src="/lovable-uploads/b0dacc9c-b59b-44fd-96df-f5f638048dd4.png" 
+              alt="Logo" 
+              class="h-16 mb-4" 
+            />
+            <div class="text-2xl font-bold tracking-widest">
+              IZAMAMAEDEGEMEOS
+            </div>
+          </div>
+          <div class="text-center text-lg font-light tracking-wider">
+            TODOS OS DIREITOS RESERVADOS
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
